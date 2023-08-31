@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@300;400;500;600&family=Poppins:wght@400;900&display=swap');
+
+
+body{
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #ccc;
+    font-family: 'Roboto', sans-serif;
+}
+#faux-body{
+    height: 100%;
+    width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+    margin: 0 auto;
+}
+.gov-title{
+    display: flex;
+    text-align: right;
+    background-color: black;
+    color: white;
+    text-align: right;
+    padding: 5px ;
+    height: 40px;
+    justify-content: flex-end;
+
+}
+.gov-title img{
+    position: relative;
+    top: 25%;
+    margin: 0 2%;
+}
+.gov-title h3{
+    position: relative;
+    bottom: 20%;
+    margin: 2%;
+}
+.logo-head{
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding:  1% 2%;
+    align-items: center;
+}
+.logoheaditem:nth-child(1){
+    width: 70px;
+    height: 50px;
+}
+.logoheaditem:nth-child(2){
+    width: 300px;
+    height: 70px;
+    margin: 3% 0;
+}
+.logoheaditem:nth-child(3){
+    width: 200px;
+    height: 50px;
+    margin: 2%;
+}
+.logoheaditem:nth-child(4){
+    width: 100px;
+    height: 70px;
+    margin-top: 1% ;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ccc;
+    height: 40px;
+}
+#list1{
+    display: flex;
+    list-style: none;
+    width: 600px;
+    align-items: center;
+    font-weight: bolder;
+    color: rgb(4, 4, 106);
+}
+.links ul li{
+    margin: none;
+    text-align: center;
+    font-size: smaller;
+    margin: 0 1%;
+
+}
+.links ul li:nth-child(1){
+    width: 40px;
+}
+.links ul li:nth-child(2){
+    width: 70px;
+}
+.links ul li:nth-child(3){
+    width: 200px;
+}
+.links ul li:nth-child(4){
+    width: 90px;
+}
+.links ul li a{
+    text-decoration: none; 
+}
+#searchbox{
+    border-radius: 5px;
+    border: none;
+}
+#list2{
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    list-style: none;
+    align-items: center;
+}
+#list2 li:nth-child(1){
+    margin-right: 5%;
+}
+#searchbox{
+    width: 100px;
+    height: 20px;
+}
+
+.links2{
+    display: flex;
+    background:linear-gradient(to bottom, rgb(85, 142, 164), rgb(2, 2, 186));
+}
+.links2 h3{
+    margin-left: 2% ;
+    font-size: smaller;
+    color: white;
+}
+.link2child{
+    width: 145px;
+    text-align: left;
+}
+.link2child:nth-child(3){
+    width: 50px;
+}
+.link2child:nth-child(4){
+    width: 100px;
+}
+.dropdown div{
+display: flex;
+flex-direction: column;
+position: absolute;
+background-color: darkblue;
+width: 150px;
+display: none;
+}
+
+.link2child:hover  .dropdownlist{
+   display: flex;
+}
+
+.dropdown div a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease;
+    padding: 4% ;
+}
+.dropdown div a:hover{
+    background-color: black;
+}
+
+.heroholder{
+    width: 100%;
+    height: 400px;
+    background-image: url('/images/officebg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#hero-section{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    /*animation: bg-slider 21000ms infinite 7s;*/
+}
+#hero-section h2{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    top: 100px;
+    left: 200px;
+    animation: text-slide 7000ms infinite 7s;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(50, 124, 180);
+}
+#hero-section h2 span{
+    font-weight: lighter;
+}
+@keyframes text-slide{
+    15%{left:-400px;}
+    30%{left:200px;}
+}
+
+.heroinfo{
+    margin: 0 auto;
+}
+
+.heroinfo img{
+    width: auto;
+    height: 100%;
+}
+#kaci{
+    position: relative;
+   left: 200px;
+   animation: kacy-slider 7000ms infinite;
+}
+@keyframes kacy-slider{
+    15%{left: 800px;}
+    30%{left: 200px;}   
+}
+/*#gordon{
+    z-index: 9;
+    animation: gordon-slider 7000ms infinite 2s;
+    left: 0;
+}
+@keyframes gordon-slider{
+    15%{left: 750px;}
+    30%{left: 0px;}
+}*/
+
+
+#runner{
+    background-color: black;
+    width: auto;
+    height: 10px;
+    position: relative;
+    top: -2%;
+    animation: load 7000ms infinite;
+    z-index: 999;
+}
+@keyframes load{
+    from{width: 0%;}
+    to{width: 100%;}
+}
+
+.donate-banner{
+    display: flex;
+    justify-content: space-evenly;
+    background:linear-gradient(to bottom, rgb(85, 142, 164), rgb(2, 2, 186));
+    align-items: center;
+    height: 50px;
+    color: white;
+}
+.donate-banner #donatetitle1{
+    font-size: 45px;
+}
+.donate-banner #donatetitle2{
+    background-color: red;
+    padding: 0.5%;
+}
+.does_and_donts{
+    display: flex;
+    border-bottom: 1px solid gray;
+}
+.images_do_dont{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+.does_and_donts a{
+    margin: auto 1%;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    position: relative;
+    background-color: darkgrey;
+    padding: 1%;
+    font-weight: bolder;
+    color: white;
+    height: 30px;
+    text-align: center;
+}
+.news_and_media{
+    text-align: center;
+}
+.blood_news{
+    display: flex;
+    justify-content: space-evenly;
+}
+.news_and_media h1{
+    color: rgb(118, 117, 117);
+}
+.blood_news h2{
+    color: rgb(4, 4, 106);
+}
+.blood_news button{
+    border: 1px solid rgb(4, 4, 106);
+    color: rgb(4, 4, 106);
+    background-color: rgba(255, 255, 255, 0);
+    padding: 3%;
+}
+.testimonials{
+    margin-top:  4% ;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 3% 0;
+}
+.twitter-div{
+    text-align: center;
+    padding: 3% 0;
+    border-bottom: 1px solid gray;
+}
+.testimonials p{
+    font-size: 20px;
+    margin: 3% 0;
+}
+.testimonials h2, .twitter-div h2, .extra-links .extra-link-list h3{
+    color: rgb(118, 117, 117);
+}
+.testimonials button{
+    border: 1px solid rgb(4, 4, 106);
+    color: rgb(4, 4, 106);
+    background-color: rgba(255, 255, 255, 0);
+    padding: 1%;
+}
+.extra-links{
+    display: flex;
+    justify-content: space-evenly;
+}
+.extra-links .extra-link-list .link-list p{
+    border-bottom: 1px solid gray;
+    padding-bottom: 3%;
+    color: rgb(4, 4, 106);
+}
+.extra-links .extra-link-list .link-list .exempt{
+    border: none;
+    padding-bottom: 3%;
+}
+footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 2% 0;
+}
+footer h2{
+    width: 80%;
+    margin: auto;
+    font-size: smaller;
+}
+
+
+
+
